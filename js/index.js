@@ -33,8 +33,7 @@ $(document).ready(function(){
 	        ]
 	});
 
-	$('.scroll')on('click') {
-		$('html,body').animate({scrollTop: 
-		$('.services').offset().top}, 500);
-	}
+	$('.scroll').on('click', function () {
+  		$('html,body').animate({scrollTop: $('.services').offset().top}, 500);
+ 	})
 });

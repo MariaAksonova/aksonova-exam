@@ -13,6 +13,25 @@
 	}
 }
 
+.about {
+	color: $blue-color;
+
+	.container {
+		display: flex;
+    	align-items: center;
+
+    	.content {
+    		text-align: left;
+    	}
+
+    	h2 {
+			font-size: 36px;
+        	font-family: $font-bold;
+        	margin-bottom: 46px;
+    	}
+	}
+}
+
 .welcome {
 	background-color: $red-color;
 	color: #fff
@@ -60,6 +79,18 @@
         background-position: 50% 0!important;
         margin-top: 8px;
     }
+}
+
+.works {
+	h2 {
+		font-size: 36px;
+        font-family: $font-bold;
+        margin-bottom: 32px;
+	}
+
+	ul {
+		list-style: none;
+	}
 }
 
 .blue-text {

@@ -35,8 +35,10 @@ get_header(); ?>
         $query = new WP_Query( $args );
         if ( $query->have_posts() ) :
             while ( $query->have_posts() ) : $query->the_post(); ?>
-                <?php the_post_thumbnail('full', 'class=img-responsive'); ?>
-                <div class="content col-md-8 col-md-offset-2 col-xs-12">
+                <div class="img-wrap col-md-5 col-xs-12">
+                    <?php the_post_thumbnail('full', 'class=img-responsive'); ?>
+                </div>
+                <div class="content col-md-7 col-xs-12 align="left" ">
                     <h2>
                         <?php the_title(); ?>
                     </h2>
