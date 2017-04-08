@@ -1,5 +1,10 @@
 @import "variable";
 
+.clients {
+  background-color: $red-color;
+  padding: 60px 0
+}
+
 .site-info {
   background: url("./images/footer-bg.png");
   background-size: cover;
@@ -14,13 +19,17 @@
 
   .phone {
   background: url("./images/phone.png") no-repeat;
-  padding-right: 20px;
+  padding-left: 30px;
   }
 
   .address {
   background: url("./images/place.png") no-repeat;
   width: 260px;
-  padding-right: 20px;
+  padding-left: 30px;
+  }
+
+  .content, .phone, .address {
+    margin-bottom: 32px
   }
 
   .wpcf7-form {

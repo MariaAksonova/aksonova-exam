@@ -44,6 +44,10 @@
       background-color: transparent;
       color: #ff4848; }
 
+.clients {
+  background-color: #ff4848;
+  padding: 60px 0; }
+
 .site-info {
   background: url("./images/footer-bg.png");
   background-size: cover;
@@ -53,6 +57,15 @@
     margin-top: 0;
     font-size: 36px;
     font-family: "RobotoLight", sans-serif; }
+  .site-info .phone {
+    background: url("./images/phone.png") no-repeat;
+    padding-left: 30px; }
+  .site-info .address {
+    background: url("./images/place.png") no-repeat;
+    width: 260px;
+    padding-left: 30px; }
+  .site-info .content, .site-info .phone, .site-info .address {
+    margin-bottom: 32px; }
   .site-info .wpcf7-form label {
     width: 100%; }
   .site-info .wpcf7-form .wpcf7-text, .site-info .wpcf7-form .wpcf7-textarea {

@@ -1,3 +1,36 @@
-/**
- * Created by masha on 08.04.2017.
- */
+$(document).ready(function(){
+	$('.clients-slider').slick({
+	        infinite: true,
+	        slidesToShow: 4,
+	        slidesToScroll: 2,
+	        autoplay: true,
+	        arrows: false,
+	        dots: true,
+	        responsive: [
+	            {
+	                breakpoint: 1000,
+	                settings: {
+	                    slidesToShow: 3,
+	                    slidesToScroll: 2,
+	                    infinite: true,
+	                    dots: true
+	                }
+	            },
+	            {
+	                breakpoint: 600,
+	                settings: {
+	                    slidesToShow: 2,
+	                    slidesToScroll: 1
+	                }
+	            },
+	            {
+	                breakpoint: 480,
+	                settings: {
+	                    slidesToShow: 1,
+	                    slidesToScroll: 1
+	                }
+	            }
+	        ]
+	  
+	});
+});
