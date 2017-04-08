@@ -14,6 +14,16 @@ function aksonova_exam_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'phone', array(
+        'label'      => __( 'Phone number', '_' ),
+        'section'    => 'title_tagline',
+        'settings'   => 'phone',
+    )));
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'address', array(
+        'label'      => __( 'Address', '_' ),
+        'section'    => 'title_tagline',
+        'settings'   => 'address',
+    )));
 }
 add_action( 'customize_register', 'aksonova_exam_customize_register' );
 

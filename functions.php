@@ -50,11 +50,6 @@ function aksonova_exam_setup() {
         'flex-height' => true,
     ) );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'aksonova-exam' ),
-	) );
-
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.

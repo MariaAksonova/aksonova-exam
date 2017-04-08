@@ -1,2 +1,55 @@
 @import "variable";
 
+.site-info {
+  background: url("./images/footer-bg.png");
+  background-size: cover;
+  padding-top: 110px;
+  color: #fff;
+
+  h2 {
+    margin-top: 0;
+    font-size: 36px;
+    font-family: $font-light;
+  }
+
+  .wpcf7-form {
+    label {
+      width: 100%;
+    }
+
+    .wpcf7-text, .wpcf7-textarea {
+      border: none;
+      padding: 20px;
+      color: $gray-color;
+      font-size: 18px;
+      font-family: $font-light;
+      width: 100%;
+    }
+
+    .wpcf7-submit {
+      font-family: $font-bold;
+      font-size: 24px;
+      color: #fff;
+      background-color: $red-color;
+      border: none;
+      padding: 14px 62px;
+    }
+  }
+}
+
+.logo-footer {
+  background-color: $dark-color;
+  text-align: center;
+  padding: 36px 0;
+}
+
+.last-footer {
+  background-color: $red-color;
+  padding: 28px 0;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+    color: #fff;
+  }
+}
