@@ -1,2 +1,39 @@
 @import "variable";
 
+//.main-header {
+//  background: url("./images/header-bg.png") no-repeat;
+//  background-size: cover;
+//}
+
+.page-template-home-template {
+  .main-header {
+    background-color: $dark-blue-color;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    margin: 0;
+    padding: 16px 0;
+  }
+
+  .menu-item {
+    a {
+      padding: 0;
+      margin-left: 24px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: $font-regular;
+
+      &:hover, &:focus, &:active {
+        background-color: transparent;
+        color: $red-color;
+      }
+    }
+  }
+}

@@ -43,11 +43,10 @@ function aksonova_exam_setup() {
 	add_theme_support( 'post-thumbnails' );
 
     register_nav_menu ('main-nav', 'header-menu');
-    register_nav_menu ('foot-nav', 'footer-menu');
 
     add_theme_support( 'custom-logo', array(
-        'height'      => 39,
-        'width'       => 119,
+        'height'      => 63,
+        'width'       => 129,
         'flex-height' => true,
     ) );
 
