@@ -162,10 +162,35 @@
   margin-bottom: 32px; }
 
 .works ul {
-  list-style: none; }
+  list-style: none;
+  padding-left: 0; }
+  .works ul li {
+    height: 322px;
+    margin: 8px 0;
+    padding: 0; }
 
 .blue-text {
   color: #2c3e50; }
+
+.scroll {
+  cursor: pointer;
+  padding: 10px 0; }
+
+@media (max-width: 800px) {
+  .welcome-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media (max-width: 500px) {
+  .welcome .col-md-6 img {
+    display: none; } }
 
 .main {
   padding-top: 60px; }
@@ -244,6 +269,27 @@
 
 .pagination .current {
   color: #000; }
+
+.single-post .post {
+  border: 1px solid #777777; }
+  .single-post .post h2 {
+    float: right; }
+    .single-post .post h2 a {
+      font-family: "RobotoBold", sans-serif;
+      font-size: 18px;
+      color: #d35400; }
+      .single-post .post h2 a:hover {
+        color: #d35400; }
+  .single-post .post h4 {
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 24px;
+    color: #d35400; }
+  .single-post .post p {
+    font-size: 13px;
+    line-height: 16px; }
+  .single-post .post p:first-child {
+    float: left;
+    padding-right: 20px; }
 
 .clients {
   background-color: #ff4848;

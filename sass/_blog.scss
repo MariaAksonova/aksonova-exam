@@ -83,3 +83,39 @@
     
   }
 }
+
+.single-post {
+	.post {
+		border: 1px solid $gray-color;
+
+		h2 {
+			float: right;
+			a {
+				font-family: $font-bold;
+				font-size: 18px;
+				color: $orange-color;
+				&:hover {
+					color: $orange-color;
+				}
+			}
+		}
+
+		h4 {
+			font-family: $font-regular;
+			font-size: 24px;
+			color: $orange-color;
+		}
+
+		p {
+			font-size: 13px;
+			line-height: 16px;
+		}
+
+		p {
+			&:first-child {
+				float: left;
+				padding-right: 20px;
+			}
+		}
+	}
+}

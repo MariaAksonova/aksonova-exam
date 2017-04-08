@@ -38,7 +38,7 @@ get_header(); ?>
                 <div class="img-wrap col-md-5 col-xs-12">
                     <?php the_post_thumbnail('full', 'class=img-responsive'); ?>
                 </div>
-                <div class="content col-md-7 col-xs-12 align="left" ">
+                <div class="content col-md-7 col-xs-12">
                     <h2>
                         <?php the_title(); ?>
                     </h2>

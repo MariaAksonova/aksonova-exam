@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div class="page-title">
 		<div class="container">
-			<h2>Our Blog</h2>
+			<h2>Best Phons Of all Time in the World</h2>
 		</div>
 	</div>
 	<div class="container main">
