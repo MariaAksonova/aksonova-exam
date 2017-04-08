@@ -1,2 +1,67 @@
 @import "variable";
 
+.home {
+
+	h2 {
+        font-size: 36px;
+        font-family: $font-light;
+	}
+
+	section {
+		padding: 90px 0;
+		text-align: center;
+	}
+}
+
+.welcome {
+	background-color: $red-color;
+	color: #fff
+}
+
+.welcome-content {
+	display: flex;
+	align-items: center;
+}
+
+.welcome-info {
+	text-align: left;
+	h2 {
+		font-size: 60px;
+        font-family: $font-bold;
+        margin-bottom: 46px;
+	}
+
+	h3 {
+		font-size: 48px;
+        font-family: $font-regular;
+	}
+
+	h4 {
+		font-size: 24px;
+        font-family: $font-regular;
+        margin-bottom: 46px;
+	}
+}
+
+.services {
+	background-color: $blue-color;
+
+	h2, h3, p {
+		color: #fff;
+	}
+
+	ul {
+    	list-style: none;
+    }
+
+    li {
+        text-align: center;
+        padding-top: 120px;
+        background-position: 50% 0!important;
+        margin-top: 8px;
+    }
+}
+
+.blue-text {
+	color: $dark-blue-color;
+}

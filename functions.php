@@ -176,3 +176,78 @@ function slider_post_type() {
     register_post_type( 'slides', $args );
 }
 add_action( 'init', 'slider_post_type' );
+
+function about_post_type() {
+    $args = array(
+        'label' => 'About us',
+        'public' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'about-us'),
+        'query_var' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'trackbacks',
+            'custom-fields',
+            'comments',
+            'revisions',
+            'thumbnail',
+            'author',
+            'page-attributes',)
+    );
+    register_post_type( 'about-us', $args );
+}
+add_action( 'init', 'about_post_type' );
+
+function services_reviews_init() {
+    $args = array(
+        'label' => 'Services',
+        'public' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'services-reviews'),
+        'query_var' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'trackbacks',
+            'custom-fields',
+            'comments',
+            'revisions',
+            'thumbnail',
+            'author',
+            'page-attributes',)
+    );
+    register_post_type( 'services-reviews', $args );
+}
+add_action( 'init', 'services_reviews_init' );
+
+function works_reviews_init() {
+    $args = array(
+        'label' => 'Works',
+        'public' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'works-reviews'),
+        'query_var' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'trackbacks',
+            'custom-fields',
+            'comments',
+            'revisions',
+            'thumbnail',
+            'author',
+            'page-attributes',)
+    );
+    register_post_type( 'works-reviews', $args );
+}
+add_action( 'init', 'works_reviews_init' );

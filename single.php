@@ -21,22 +21,11 @@ get_header(); ?>
 				<?php if ( have_posts() ) :
 					while ( have_posts() ) : the_post(); ?>
 						<article class="post col-xs-12">
-							<div class="post-content">
-								<div class="img-wrap">
-									<a href="<?php the_permalink(); ?>">
-										<?php the_post_thumbnail('full', 'class=img-responsive'); ?>
-									</a>
-								</div>
+							<div class="single-post col-xs-12">
 								<h2>
 									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								</h2>
-								<div class="info start-xs">
-									<span class="time"><?php the_time('F j, Y'); ?></span>
-									<span class="author"><?php the_author(); ?></span>
-									<span class="category"><?php the_category(', '); ?></span>
-									<span class="comments"><?php comments_number('no comments', '1 comment', '% comments'); ?></span>
-								</div>
-								<div class="content">
+								<div class="content col-xs-12">
 									<?php the_content(); ?>
 								</div>
 							</div>

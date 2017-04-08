@@ -90,6 +90,57 @@
   padding: 12px;
   margin: 20px 0; }
 
+.home h2 {
+  font-size: 36px;
+  font-family: "RobotoLight", sans-serif; }
+
+.home section {
+  padding: 90px 0;
+  text-align: center; }
+
+.welcome {
+  background-color: #ff4848;
+  color: #fff; }
+
+.welcome-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.welcome-info {
+  text-align: left; }
+  .welcome-info h2 {
+    font-size: 60px;
+    font-family: "RobotoBold", sans-serif;
+    margin-bottom: 46px; }
+  .welcome-info h3 {
+    font-size: 48px;
+    font-family: "RobotoRegular", sans-serif; }
+  .welcome-info h4 {
+    font-size: 24px;
+    font-family: "RobotoRegular", sans-serif;
+    margin-bottom: 46px; }
+
+.services {
+  background-color: #004966; }
+  .services h2, .services h3, .services p {
+    color: #fff; }
+  .services ul {
+    list-style: none; }
+  .services li {
+    text-align: center;
+    padding-top: 120px;
+    background-position: 50% 0 !important;
+    margin-top: 8px; }
+
+.blue-text {
+  color: #2c3e50; }
+
 .main {
   padding-top: 60px; }
   .main h2 {

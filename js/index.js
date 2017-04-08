@@ -32,4 +32,9 @@ $(document).ready(function(){
 	            }
 	        ]
 	});
+
+	$('.scroll')on('click') {
+		$('html,body').animate({scrollTop: 
+		$('.services').offset().top}, 500);
+	}
 });
