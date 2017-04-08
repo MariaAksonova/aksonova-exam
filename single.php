@@ -34,10 +34,9 @@ get_header(); ?>
 				<?php else: ?>
 					<p>No posts found</p>
 				<?php endif; ?>
-			</div>
-			<div class="comments">
-				<div class="col-xs-12">
-					<?php comments_template(); ?>
+				<div class="col-xs-12 nav">
+					<?php previous_post_link(); ?>    
+					<?php next_post_link(); ?>
 				</div>
 			</div>
 		</main>

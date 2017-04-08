@@ -15,21 +15,21 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="clients">
-		<div class="container">
-			<div class="row">
-				<h2>Featured Clients</h2>
-				<?php
-			    $args = array('post_type' => 'slides', 'posts_per_page' => 100);
-			    $the_query = new WP_Query($args);
-	        		if ($the_query->have_posts()):?>
-	            		<div class="clients-slider col-xs-12">
-                			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                            <?php the_post_thumbnail('full', 'class=img-responsive'); ?>
-                        </div>
+        <div class="container">
+        	<h2>Featured Clients</h2>
+        <?php
+        $args = array('post_type' => 'slides', 'posts_per_page' => 100);
+        $the_query = new WP_Query($args);
+        if ($the_query->have_posts()):?>
+            <div class="clients-slider col-xs-12">
+                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                    <div class="col-xs-3">
+                        <?php the_post_thumbnail('full', 'class=img-responsive'); ?>
                     </div>
                 <?php endwhile; ?>
             </div>
         <?php endif; wp_reset_postdata(); ?>
+    </div>
 	</div>
 	<div class="site-info">
 		<div class="container">

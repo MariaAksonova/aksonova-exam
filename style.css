@@ -221,7 +221,8 @@
   font-family: "RobotoMedium", sans-serif; }
 
 .post-content {
-  border: 1px solid #777777; }
+  border: 1px solid #777777;
+  margin-bottom: 30px; }
 
 .info {
   border-top: 1px solid #777777;
@@ -270,6 +271,19 @@
 .pagination .current {
   color: #000; }
 
+.single-post .nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .single-post .nav a {
+    font-size: 20px;
+    color: #ff4848; }
+
 .single-post .post {
   border: 1px solid #777777; }
   .single-post .post h2 {
@@ -295,6 +309,11 @@
   background-color: #ff4848;
   padding: 60px 0;
   text-align: center; }
+  .clients h2 {
+    color: #fff;
+    margin-bottom: 70px;
+    font-size: 36px;
+    font-family: "RobotoLight", sans-serif; }
 
 .site-info {
   background: url("./images/footer-bg.png");
