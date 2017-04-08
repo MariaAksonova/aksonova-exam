@@ -115,9 +115,9 @@ function aksonova_exam_scripts() {
 
 	wp_enqueue_script( 'aksonova-exam-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
     wp_enqueue_script( 'jquery-script', get_template_directory_uri() . '/bower_components/jquery/dist/jquery.min.js');
+    wp_enqueue_script( 'carousel-script', get_template_directory_uri() . '/bower_components/slick-carousel/slick/slick.min.js');
     wp_enqueue_script( 'aksonova-exam-script', get_template_directory_uri() . '/js/index.js');
     wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/bower_components/bootstrap/dist/js/bootstrap.min.js');
-    wp_enqueue_script( 'carousel-script', get_template_directory_uri() . '/bower_components/slick-carousel/slick/slick.min.js');
 
 	wp_enqueue_script( 'aksonova-exam-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

@@ -44,10 +44,56 @@
       background-color: transparent;
       color: #ff4848; }
 
+.widget {
+  background-color: #004966;
+  margin-bottom: 24px;
+  padding: 50px 14px; }
+
+.widget-title {
+  font-family: "RobotoBold", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px !important; }
+
+.widget_categories ul {
+  list-style: none;
+  padding-left: 0;
+  font-family: "RobotoRegular", sans-serif;
+  font-size: 22px; }
+  .widget_categories ul a, .widget_categories ul a:hover {
+    color: #fff; }
+
+.widget_mc4wp_form_widget p {
+  color: #fff; }
+
+.widget_mc4wp_form_widget label, .widget_mc4wp_form_widget input {
+  width: 100%; }
+
+.widget_mc4wp_form_widget .email {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 12px;
+  margin: 20px 0; }
+
+.widget_mc4wp_form_widget .submit {
+  text-transform: uppercase;
+  background-color: #ff4848;
+  border: 2px solid #fff;
+  padding: 14px; }
+
+.widget_search input {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 12px;
+  margin: 20px 0; }
+
 .main {
   padding-top: 60px; }
   .main h2 {
-    padding: 14px;
+    padding: 0 14px;
     margin: 0; }
     .main h2 a {
       font-family: "RobotoMedium", sans-serif;
@@ -56,7 +102,12 @@
       .main h2 a:hover {
         color: #ff4848; }
   .main .content {
-    padding: 14px; }
+    padding: 0 14px; }
+    .main .content p {
+      font-family: "RobotoRegular", sans-serif;
+      font-size: 9px;
+      color: #000;
+      line-height: 16px; }
 
 .page-title {
   background: url("./images/header-bg.png");
@@ -71,7 +122,51 @@
   border: 1px solid #777777; }
 
 .info {
-  border-top: 1px solid #777777; }
+  border-top: 1px solid #777777;
+  text-align: center;
+  padding: 10px 0; }
+  .info span {
+    font-size: 12x;
+    color: #777777;
+    background: url("./images/date.png") 0 50% no-repeat;
+    padding: 10px 0 10px 22px; }
+
+.pagination h2, .pagination .next, .pagination .prev {
+  display: none !important; }
+
+.pagination .page-numbers {
+  font-size: 18px;
+  color: #fff;
+  margin-right: 14px;
+  background-color: #ff4848;
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.pagination .nav-links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px; }
+
+.pagination .current {
+  color: #000; }
 
 .clients {
   background-color: #ff4848;

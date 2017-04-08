@@ -4,7 +4,7 @@
 	padding-top: 60px;
 
 	h2 {
-		padding: 14px;
+		padding: 0 14px;
 		margin: 0;
 		a {
 			font-family: $font-medium;
@@ -17,7 +17,14 @@
 	}
 
 	.content {
-		padding: 14px;
+		padding: 0 14px;
+
+		p {
+		font-family: $font-regular;
+		font-size: 9px;
+		color: #000;
+		line-height: 16px;
+		}
 	}
 }
 
@@ -37,4 +44,42 @@
 
 .info {
 	border-top: 1px solid $gray-color;
+	text-align: center;
+	padding: 10px 0;
+	span {
+		font-size: 12x;
+		color: $gray-color;
+		background: url("./images/date.png") 0 50% no-repeat;
+		padding: 10px 0 10px 22px;
+	}
+}
+
+.pagination {
+
+  h2, .next, .prev {
+    display: none!important;
+  }
+
+  .page-numbers {
+    font-size: 18px;
+    color: #fff;
+    margin-right: 14px;
+    background-color: $red-color;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .current {
+    color: #000;
+    
+  }
 }
