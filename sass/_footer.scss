@@ -12,6 +12,17 @@
     font-family: $font-light;
   }
 
+  .phone {
+  background: url("./images/phone.png") no-repeat;
+  padding-right: 20px;
+  }
+
+  .address {
+  background: url("./images/place.png") no-repeat;
+  width: 260px;
+  padding-right: 20px;
+  }
+
   .wpcf7-form {
     label {
       width: 100%;
