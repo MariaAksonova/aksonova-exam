@@ -15,17 +15,15 @@
 get_header(); ?>
 
 	<div class="page-title">
-		<div class="container">
-			<h2>Our Blog</h2>
-		</div>
+		<h2>Blog Posts</h2>
 	</div>
 	<div class="container main">
-	<div id="primary" class="content-area col-md-8 col-sm-12">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="posts row">
+			<div class="posts row col-md-8 col-sm-12">
 				<?php if ( have_posts() ) :
 					while ( have_posts() ) : the_post(); ?>
-						<article class="post col-xs-12">
+						<article class="post col-md-6 col-xs-12">
 							<div class="post-content">
 								<div class="img-wrap">
 									<a href="<?php the_permalink(); ?>">
@@ -35,14 +33,11 @@ get_header(); ?>
 								<h2>
 									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								</h2>
-								<div class="info start-xs">
-									<span class="time"><?php the_time('F j, Y'); ?></span>
-									<span class="author"><?php the_author(); ?></span>
-									<span class="category"><?php the_category(', '); ?></span>
-									<span class="comments"><?php comments_number('no comments', '1 comment', '% comments'); ?></span>
-								</div>
 								<div class="content">
 									<?php the_excerpt(); ?>
+								</div>
+								<div class="info start-xs">
+									<span class="time"><?php the_time('d,m,Y'); ?></span>
 								</div>
 							</div>
 						</article>
@@ -50,7 +45,9 @@ get_header(); ?>
 				<?php else: ?>
 					<p>No posts found</p>
 				<?php endif; ?>
-				<?php the_posts_pagination(['mid_size' => 2]);?>
+				<div class="col-xs-12">
+					<?php the_posts_pagination(['mid_size' => 2]);?>
+				</div>
 			</div>
 		</main>
 	</div>

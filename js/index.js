@@ -2,10 +2,10 @@ $(document).ready(function(){
 	$('.clients-slider').slick({
 	        infinite: true,
 	        slidesToShow: 4,
-	        slidesToScroll: 2,
+	        slidesToScroll: 4,
 	        autoplay: true,
 	        arrows: false,
-	        dots: true,
+	        dots: false,
 	        responsive: [
 	            {
 	                breakpoint: 1000,
@@ -31,6 +31,5 @@ $(document).ready(function(){
 	                }
 	            }
 	        ]
-	  
 	});
 });

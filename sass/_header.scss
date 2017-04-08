@@ -1,14 +1,7 @@
 @import "variable";
 
-//.main-header {
-//  background: url("./images/header-bg.png") no-repeat;
-//  background-size: cover;
-//}
-
-.page-template-home-template {
-  .main-header {
-    background-color: $dark-blue-color;
-  }
+.main-header {
+ background-color: $dark-blue-color;
 }
 
 .header-container {
